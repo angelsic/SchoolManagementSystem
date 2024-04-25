@@ -1,13 +1,13 @@
 package main.v1.repository.entity;
 
 public class Course {
-    private long id;
+    private int id;
     private String name;
     private String description;
     private int creditnumber;
     private String version;
 
-    public Course(long id, String name, String description, int creditnumber, String version) {
+    public Course(int id, String name, String description, int creditnumber, String version) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -15,11 +15,14 @@ public class Course {
         this.version = version;
     }
 
-    public long getId() {
+    public Course() {
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
